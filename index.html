@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <audio id="trueAudio">
+        <source src="./audio/true.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="falseAudio">
+        <source src="./audio/false.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="jumbotron">
+        <div class="display-4">Coding Bootcamp - Hangman</div>
+        <div class="lead">Guess the name of car model!</div>
+        <div class="my-4">Click any letter to begin ...</div>
+    </div>
+    <div class="toguess">
+        <div class="toguesstitle">Word to Guess</div>
+        <div class="current"></div>
+    </div>
+    <div class="wrong">Wrong Guesses: 
+        <div class="already"> </div>
+    </div>
+    <div class="left">Guesses Left: 
+        <div class="remaining">9</div>
+    </div>
+    <div class="wins">Wins: 
+        <div class="score">0</div>
+    </div>
+    <div class="losses">Losses: 
+        <div class="losescore">0</div>
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
